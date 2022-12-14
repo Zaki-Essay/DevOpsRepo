@@ -7,8 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ThymeleafAppApplication {
 
 	//test the jenkins job if trrigre
-	//test building docker image whit jenkins
-	
+	//test building docker image whit jenkins in local repo
+	//hey from demi final
+
 	public static void main(String[] args) {
 		SpringApplication.run(ThymeleafAppApplication.class, args);
 	}
