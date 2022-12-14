@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ThymeleafAppApplication {
 
-	//i add some comment here...
+	//test the jenkins job if trrigre
 	public static void main(String[] args) {
 		SpringApplication.run(ThymeleafAppApplication.class, args);
 	}
