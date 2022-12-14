@@ -12,6 +12,7 @@ public class ThymeleafAppApplication {
 	//hada mahwa hada
 	//build the new image docker and delete the existing one
 	//this some..
+	//some comment
 
 	public static void main(String[] args) {
 		SpringApplication.run(ThymeleafAppApplication.class, args);
