@@ -20,6 +20,8 @@ public class ThymeleafAppApplication {
 
     //fuccking comment
 
+	//gain some comment
+
 	public static void main(String[] args) {
 		SpringApplication.run(ThymeleafAppApplication.class, args);
 	}
