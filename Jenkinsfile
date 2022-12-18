@@ -14,7 +14,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    sh 'docker build -t zikossy/spring-image:v1.0.3 .'
+                    sh 'docker build -t zikossy/spring-image:v1.0.4 .'
                 }
             }
         }
@@ -26,18 +26,12 @@ pipeline {
                    sh 'docker login -u zikossy -p ${DOCKER_HUB_PWD}'
 
                 }
-                   sh 'docker push zikossy/spring-image:v1.0.3'
+                   sh 'docker push zikossy/spring-image:v1.0.4'
                 }
             }
         }
 
-        stage('Deploy to k8s'){
-                    steps{
-                        script{
-                            kubernetesDeploy (configs: 'deploymentservice.yaml',kubeconfigId: 'k8sconfigpwd')
-                        }
-                    }
-        }
+
     }
 
 
