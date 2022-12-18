@@ -10,18 +10,6 @@ public class ThymeleafAppApplication {
 	//test building docker image whit jenkins in local repo
 
 
-	//I add some new comments
-
-	//hello world
-
-
-
-	//funcking comments
-
-    //fuccking comment
-
-	//gain some comment
-
 	public static void main(String[] args) {
 		SpringApplication.run(ThymeleafAppApplication.class, args);
 	}
