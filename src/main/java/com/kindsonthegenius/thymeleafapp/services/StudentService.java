@@ -12,6 +12,9 @@ import com.kindsonthegenius.thymeleafapp.repositories.StudentRepository;
 @Service
 public class StudentService {
 
+
+	//hey from service
+
 	@Autowired
 	private StudentRepository studentRepository;
 	
