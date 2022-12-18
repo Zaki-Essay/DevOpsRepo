@@ -14,7 +14,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    sh 'docker build -t zikossy/spring-image:v1.0.2 .'
+                    sh 'docker build -t zikossy/spring-image:v1.0.3 .'
                 }
             }
         }
@@ -26,7 +26,7 @@ pipeline {
                    sh 'docker login -u zikossy -p ${DOCKER_HUB_PWD}'
 
                 }
-                   sh 'docker push zikossy/spring-image:v1.0.2'
+                   sh 'docker push zikossy/spring-image:v1.0.3'
                 }
             }
         }
