@@ -8,7 +8,7 @@ public class ThymeleafAppApplication {
 
 	//test the jenkins job if trrigre
 	//test building docker image whit jenkins in local repo
-	//test fucking jenkins it doesnt work
+	//test
 
 	public static void main(String[] args) {
 		SpringApplication.run(ThymeleafAppApplication.class, args);

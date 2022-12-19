@@ -14,7 +14,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    sh 'docker build -t zikossy/spring-app-image:v1.0.0 .'
+                    sh 'docker build -t zikossy/spring-app-image:v1.0.1 .'
                 }
             }
         }
@@ -22,11 +22,11 @@ pipeline {
         stage('Push image to Hub'){
             steps{
                 script{
-                   withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'DOCKER_HUB_PWD')])  {
+                 withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'DOCKER_HUB_PWD')])  {
                    sh 'docker login -u zikossy -p ${DOCKER_HUB_PWD}'
 
                 }
-                   sh 'docker push zikossy/spring-app-image:v1.0.0'
+                   sh 'docker push zikossy/spring-app-image:v1.0.1'
                 }
             }
         }
